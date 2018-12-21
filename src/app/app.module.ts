@@ -9,6 +9,10 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { MyMoviesPageModule } from '../pages/my-movies/my-movies.module';
+import { MovieListPageModule } from '../pages/movie-list/movie-list.module';
+import { MovieDetailPageModule } from '../pages/movie-detail/movie-detail.module';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -18,6 +22,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    MyMoviesPageModule,
+    MovieListPageModule,
+    MovieDetailPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
